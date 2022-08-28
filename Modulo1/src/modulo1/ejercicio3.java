@@ -20,15 +20,15 @@ public class ejercicio3 {
         c = 1;
         boolean l = true;
         
-        boolean x,y,z,w; //Ecuaciones
-        x = (a > b) && (!l) || (x < 30);
+        boolean y,z,w; //Ecuaciones
+        // x = (a > b) && (!l) || (x < 30); Hubo erros debido a "(x < 30)"
         y = (b <= 100) && !(a > c) && (c == 1);
         z = (c == 5) || (c == 30) && !l;
         w = ((b + 20) > (c - 1)) || ((a + 5) <= 50);
         
         //Resultados
         System.out.print("Resultados: \n");
-        System.out.print("Valor de X= "+x+"\n");
+        //System.out.print("Valor de X= "+x+"\n");
         System.out.print("Valor de Y= "+y+"\n");
         System.out.print("Valor de Z= "+z+"\n");
         System.out.print("Valor de Y= "+w+"\n");
