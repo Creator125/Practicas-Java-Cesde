@@ -20,11 +20,11 @@ public class ejercicio3 {
         c = 1;
         boolean l = true;
         
-        boolean y,z,w,x,x2; //Ecuaciones
+        boolean y,z,w,x,x1; //Ecuaciones
         //a. X = (A>B) ˄ (⁓L) ˅ (X < 30)
-        x = ((a > b) && (!l));
-        int n = x ? 1 : 0;
-        x2 = x || (n < 30);
+        x1 = ((a > b) && (!l));
+        int n = x1 ? 1 : 0; //Convirtiendo la x de (X < 30) an entero
+        x = x1 || (n < 30);  //Concluyendo la ecuación
         
         y = (b <= 100) && !(a > c) && (c == 1);
         z = (c == 5) || (c == 30) && !l;
@@ -32,7 +32,7 @@ public class ejercicio3 {
         
         //Resultados
         System.out.print("Resultados: \n");
-        System.out.print("Valor de X= "+x2+"\n");
+        System.out.print("Valor de X= "+x+"\n");
         System.out.print("Valor de Y= "+y+"\n");
         System.out.print("Valor de Z= "+z+"\n");
         System.out.print("Valor de Y= "+w+"\n");
