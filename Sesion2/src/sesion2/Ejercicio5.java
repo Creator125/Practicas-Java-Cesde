@@ -10,7 +10,7 @@ public class Ejercicio5 {
         int n,x;
         float serie=0;
         
-        System.out.println("Ingrese un numero"); //Dando valor a laa variables
+        System.out.println("Ingrese un numero"); 
         Scanner valor = new Scanner(System.in);
         n = valor.nextInt();
         

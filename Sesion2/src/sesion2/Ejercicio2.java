@@ -18,11 +18,11 @@ public class Ejercicio2 {
         
         System.out.println("Ingrese el valor de C");
         Scanner valor3 = new Scanner(System.in);
-        C = valor2.nextInt();
+        C = valor3.nextInt();
         
         System.out.println("Ingrese el valor de x");
         Scanner valor4 = new Scanner(System.in);
-        x = valor2.nextInt();
+        x = valor4.nextInt();
         
         ecuacion = (A * x * 2) + (B * x) + C; //Resolviendo la ecucacion
         boolean resul = (ecuacion == 0);
