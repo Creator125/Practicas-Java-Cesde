@@ -12,7 +12,7 @@ Ejercicios de java en Cesde
 
 - Javatpoints: https://www.javatpoint.com/java-tutorial
 
-- Geekforgeek: https://www.geeksforgeeks.org/java-tutorial/?ref=lbp
+- Geekforgeek: https://www.geeksforgeeks.org/java/?ref=shm
 
 
 
