@@ -12,12 +12,14 @@ Ejercicios de java en Cesde
 
 - Javatpoints: https://www.javatpoint.com/java-tutorial
 
-- Geekforgeek: https://www.geeksforgeeks.org/java/?ref=shm
-
-
+- Geekforgeek: https://www.geeksforgeeks.org/java-tutorial/?ref=lbp
 
 ## Enlaces adicionales
 
 Palabras reservadas:
 
 - https://www.abrirllave.com/java/palabras-clave.php
+
+Diferencia. entre print() y println()
+
+- https://www.tutorialspoint.com/difference-between-print-and-println-in-java
