@@ -6,7 +6,7 @@ package sesion6;
 
 /**
  *
- * @author 108
+ * @author gloriaelena
  */
 public class Sesion6 {
 
