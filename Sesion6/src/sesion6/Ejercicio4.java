@@ -6,11 +6,36 @@ artículos no se hace descuento. Mostrar el código, el total de la venta y el
 valor del descuento.
  */
 package sesion6;
+import java.util.Scanner;
 
-/**
- *
- * @author gloriaelena
- */
 public class Ejercicio4 {
-    
+    public static void main(String[] args) {
+        double articulos,valor,descuento,valor_final,total;
+        
+        //Catidad de articulos
+        System.out.println("Ingrese la cantidad de articulos vendidos");
+        Scanner valor1 = new Scanner(System.in);
+        articulos = valor1.nextDouble();
+        
+        //Valor de la compra
+        System.out.println("Ingrese el valor para cada aticulos");
+        Scanner valor2 = new Scanner(System.in);
+        valor = valor2.nextDouble();
+        
+        
+        if(articulos >= 50){
+            descuento = valor * 0.10;
+            valor_final = valor - descuento;
+            
+            total = valor_final * articulos;
+            
+            System.out.println("\nSe realizó un descuento del 10% al cliente");
+            System.out.println("Valor total de la venta: $" + total);
+            System.out.println("Valor del descuento: $" + valor_final);
+        }else{
+            total = valor * articulos;
+            
+            System.out.println("\nValor total de la venta: $" + total);
+        }
+    }
 }

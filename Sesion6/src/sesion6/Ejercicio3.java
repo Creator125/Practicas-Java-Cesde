@@ -29,7 +29,7 @@ public class Ejercicio3 {
         //Salario básico por dias
         System.out.println("Ingrese el salario básico por dias");
         Scanner valor3 = new Scanner(System.in);
-        salario_basico = valor3.nextInt();
+        salario_basico = valor3.nextDouble();
         
         
         salario_mensual = salario_basico * dias_trabajados; //Hallando el salario basico
