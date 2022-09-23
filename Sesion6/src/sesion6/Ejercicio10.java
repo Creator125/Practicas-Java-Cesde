@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Ejercicio10 {
     public static void main(String[] args) {
-        String nombre;
+        String nombre, genero, estado_civil;
         int edad;
         
         //Nombre
@@ -21,29 +21,24 @@ public class Ejercicio10 {
         Scanner valor2 = new Scanner(System.in);
         edad = valor2.nextInt();
         
+        //Genero
+        System.out.println("Ingrese el genero");
+        Scanner valor3 = new Scanner(System.in);
+        genero = valor3.nextLine();
         
-        if(edad >= 18){
-            String estado;
-            String estado_c = "cazado";
-            
-            //Estado civil
-            System.out.println("Ingrese el estado civil");
-            Scanner valor3 = new Scanner(System.in);
-            estado = valor3.nextLine();
-            
-            if(estado.equals(estado_c)){
-                String nombre2;
-                
-                //Nombre de la mujer
-                System.out.println("Ingrese el nombre de la pareja (Mujer)");
-                Scanner valor4 = new Scanner(System.in);
-                nombre2 = valor4.nextLine();
-                
-                System.out.println("\nNombre del usuario: " + nombre);
-                System.out.println("Nombre de la pareja: " + nombre2);
-            }else{
-                System.out.println("\nNombre del usuario: " + nombre);
-            }
+        //Estado civil
+        System.out.println("Ingrese el estado civil");
+        Scanner valor4 = new Scanner(System.in);
+        estado_civil = valor4.nextLine();
+        
+        
+        if(edad >= 18 && genero.equals("femenino") && estado_civil.equals("cazada")){
+            System.out.println("Datos del ususario:");
+            System.out.println("Nombre: " + nombre);
+            System.out.println("Edad: " + edad);
+        }else if(genero.equals("masculino") && estado_civil.equals("soltero")){
+            System.out.println("Datos del ususario:");
+            System.out.println("Nombre: " + nombre);
         }else{
             System.out.println("\nNo cumpre con lo pedido");
         }
