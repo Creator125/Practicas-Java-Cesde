@@ -9,8 +9,8 @@ import java.util.Scanner;
 
 public class Ejercicio6 {
     public static void main(String[] args) {
-        double precio,descuento,precio_total;
-        int horas;
+        double precio,precio_total;
+        double horas,resta,horas_demas;
         
         //Precio de horas de uso del vehículo
         System.out.println("Ingrese el precio por hora");
@@ -20,12 +20,14 @@ public class Ejercicio6 {
         //Horas de uso del veículo
         System.out.println("Ingrese las horas de uso");
         Scanner valor2 = new Scanner(System.in);
-        horas = valor2.nextInt();
+        horas = valor2.nextDouble();
         
         
         if(horas > 10){
-            descuento = precio * 0.20;
-            precio_total = (precio - descuento) * horas;
+            resta = horas - 10;
+            horas_demas =((resta * 20) * 20) / 100; 
+            precio_total = (horas - precio) * horas_demas;
+            System.out.println("Se realizó un descuento del 20%");
         }else{
             precio_total = precio * horas;
         }
