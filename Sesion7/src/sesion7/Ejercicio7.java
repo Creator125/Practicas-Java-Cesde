@@ -11,10 +11,12 @@ public class Ejercicio7 {
         int cedula, edad;
         
         //Cedula
+        System.out.println("Ingrese tu cedula");
         Scanner valor1 = new Scanner(System.in);
         cedula = valor1.nextInt();
         
         //Edad
+        System.out.println("Ingrese tu edad");
         Scanner valor2 = new Scanner(System.in);
         edad = valor2.nextInt();
         
