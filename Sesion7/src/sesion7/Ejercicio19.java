@@ -43,7 +43,7 @@ public class Ejercicio19 {
         }else if(forma_pago == 2){
             cuota_inicial = precio_venta * 0.20 + precio_venta * 0.20 * 0.8;
             
-            System.out.println("Precio de venta de la propidad: S" + precio_venta);
+            System.out.println("Precio de venta de la propidad: $" + precio_venta);
             System.out.println("Cuota inicial: $" + cuota_inicial);
         }else{
             System.out.println("Ingreso la forma de pago incorrecta.");
