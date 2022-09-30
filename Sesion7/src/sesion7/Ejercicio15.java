@@ -11,6 +11,7 @@ public class Ejercicio15 {
         int codigo;
         double vh; //Valor por hora
         double nh; //Numero de horas
+        double hm; //Horas demás
         double salario; //Salario semanal
         
         //Codigo
@@ -29,16 +30,17 @@ public class Ejercicio15 {
         nh = valor2.nextDouble();
         
         
-        salario = vh * nh;
-        
         if (nh >= 48){
-            double recargo = salario * 0.35;
-            salario = salario + recargo;
+            hm = nh - 48; //Obteniedo las horas demás
+            double recargo = ((hm * vh) * 35) / 100;
+            salario = (((hm * vh) + recargo) + (nh * vh));
             
             System.out.println("Al empleado " + codigo + " se le debe pagar un recargo del 30%");
-            System.out.println("Al empleado " + codigo + " se le debe pagar en total " + salario);
+            System.out.println("Al empleado " + codigo + " se le debe pagar en total $" + salario);
         }else{
-            System.out.println("Al empleado " + codigo + " se le debe pagar en total " + salario);
+            salario = vh * nh;
+            
+            System.out.println("Al empleado " + codigo + " se le debe pagar en total $" + salario);
         }
     }
 }
