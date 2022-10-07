@@ -11,13 +11,15 @@ import java.util.Scanner;
 
 public class Ejercicio20 {
     public static void main(String[] args) {
-        int codigo,dias_trabajados;
-        double salario_mensual,salario_basico,seguro_social,pensiones,salario_neto;
+        String codigo;
+        int dias_trabajados;
+        double salario_mensual, salario_basico, seguro_social,
+               pensiones, salario_neto, deducciones;
         
         //Codigo
         System.out.println("Ingrese el codigo");
         Scanner valor1 = new Scanner(System.in);
-        codigo = valor1.nextInt();
+        codigo = valor1.nextLine();
         
         //Dias trabajados al mes
         System.out.println("Ingrese los días trabajados al mes");
@@ -30,35 +32,28 @@ public class Ejercicio20 {
         salario_basico = valor3.nextDouble();
         
         
-        salario_mensual = salario_basico * dias_trabajados; //Hallando el salario basico
+        salario_mensual = dias_trabajados * salario_basico; //Hallando el salario basico
         
         
         if(salario_mensual >= 1400000){
-            double impuesto = salario_mensual - (salario_mensual * 0.7);
-            seguro_social = salario_mensual - (salario_mensual * 0.3);
-            pensiones = salario_mensual - (salario_mensual * 0.2);
-            salario_neto = salario_mensual - impuesto - seguro_social - pensiones;
-            
-            //Imprimiendo las deducciones
-            System.out.println("Codigo del usuario: " + codigo);
-            System.out.println("Salario mensual: " + salario_mensual);
-            System.out.println("Impuesto: " + impuesto);
-            System.out.println("Seguro social: " + seguro_social);
-            System.out.println("Pensiones: " + pensiones);
-            System.out.println("Salario neto: " + salario_neto);
+            double impuesto = salario_mensual * 0.7;
+            seguro_social = salario_mensual * 0.3;
+            pensiones = salario_mensual * 0.2;
+            deducciones = impuesto + seguro_social + pensiones;
+            salario_neto = salario_mensual + deducciones;
         }else{
-            seguro_social = salario_mensual - (salario_mensual * 0.2);
-            pensiones = salario_mensual - (salario_mensual * 1.5);
-            double subsidio = salario_mensual + (salario_mensual * 0.2);
-            salario_neto = salario_mensual - seguro_social - pensiones;
+            seguro_social = salario_mensual * 0.2;
+            pensiones = (salario_mensual * 15) / 100;
+            double subsidio = salario_mensual * 0.2;
+            deducciones = seguro_social + pensiones;
+            salario_neto = salario_mensual + deducciones + subsidio;
             
-            //Imprimiendo las deducciones
-            System.out.println("Codigo del usuario: " + codigo);
-            System.out.println("Salario mensual: " + salario_mensual);
-            System.out.println("Seguro social: " + seguro_social);
-            System.out.println("Pensiones: " + pensiones);
-            System.out.println("Subsidio: " + subsidio);
-            System.out.println("Salario neto: " + salario_neto);
+            System.out.println("Se adicionó un subsidio del 2% ");
         }
+        
+        System.out.println("Codigo del empleado: " + codigo);
+        System.out.println("Salario mensual: " + salario_mensual);
+        System.out.println("Salario neto: " + salario_neto);
+        System.out.println("Deducciones: " + deducciones);
     }
 }
