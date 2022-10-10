@@ -26,8 +26,13 @@ public class Ejercicio6 {
     public static void main(String[] args) {
         int clave,duracion,costo=0;
         
+        //Duración
+        System.out.println("Ingrese la duracion de la llamada");
+        Scanner dato2 = new Scanner(System.in);
+        duracion = dato2.nextInt();
+        
         //Clave
-        System.out.println("Ingrese la clave del destino a llamar");
+        System.out.println("Ingrese la clave del origen de la llamada");
         System.out.println("(1) Camerun");
         System.out.println("(2) Estados Unidos");
         System.out.println("(5) Argentina");
@@ -39,11 +44,7 @@ public class Ejercicio6 {
         System.out.println("(20) Oceania");
         Scanner dato1 = new Scanner(System.in);
         clave = dato1.nextInt();
-        
-        //Duración
-        System.out.println("Ingrese la duracion de la llamada");
-        Scanner dato2 = new Scanner(System.in);
-        duracion = dato2.nextInt();
+     
         
         switch (clave) {
             case 1: costo = 750 * duracion; break; // Costo para Camerun
@@ -51,11 +52,14 @@ public class Ejercicio6 {
             case 5: costo = 370 * duracion; break; // Costo para Argentina
             case 6: costo = 560 * duracion; break; // Costo para Canada
             case 7: costo = 480 * duracion; break; // Costo para Mexico
-            case 9: costo = 90 * duracion; break; // Costo para Europa
-            case 10: costo = 750 * duracion; break; // Costo para Asia
-            case 15: costo = 750 * duracion; break; // Costo para 
+            case 9: costo = 890 * duracion; break; // Costo para Europa
+            case 10: costo = 930 * duracion; break; // Costo para Asia
+            case 15: costo = 920 * duracion; break; // Costo para Africa
+            case 20: costo = 1030 * duracion; break; // Costo para Oceania
             default:
-                throw new AssertionError();
+                System.out.println("No elegiste ninguna opcion");
         }
+        
+        System.out.println("Costo total de la llamada: $" + costo);
     }
 }
