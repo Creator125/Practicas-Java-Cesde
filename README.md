@@ -2,6 +2,18 @@
 
 Ejercicios de java en Cesde
 
+# Tema de las sesiones
+
+Sesión 1: Iniciando en Java.
+
+Sesión 2: Importar librerias (se destacó la libreria Scanner).
+
+Sesión 6: Condicionales (if, else y else if).
+
+Sesión 7: Decisiones lógicas anidadas (Condicionales anidadas).
+
+Sesión 8: Selector multiple (switch, case y default)
+
 ## Referencias (Enlaces y docs):
 
 - W3school: https://www.w3schools.com/java/default.asp
