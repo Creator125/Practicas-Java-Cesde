@@ -35,3 +35,7 @@ Palabras reservadas:
 Diferencia. entre print() y println()
 
 - https://www.tutorialspoint.com/difference-between-print-and-println-in-java
+
+Secuencia escape
+
+- https://respuestasrapidas.com.mx/como-usar-secuencias-de-escape-en-java/
