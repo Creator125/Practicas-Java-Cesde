@@ -14,6 +14,12 @@ Sesión 7: Decisiones lógicas anidadas (Condicionales anidadas).
 
 Sesión 8: Selector multiple (switch, case y default)
 
+Sesión 9: Bucle y acumulador (for, while, do while)
+
+Sesión 10: Funciones
+
+Sesión 11: Vectores
+
 ## Referencias (Enlaces y docs):
 
 - W3school: https://www.w3schools.com/java/default.asp
