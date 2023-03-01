@@ -2,7 +2,10 @@
 
 Ejercicios de java en Cesde
 
-# Tema de las sesiones
+# Semestres
+
+### Semestre 1
+El aprendisaje estaba dividido en distintas sesiones:
 
 Sesión 1: Iniciando en Java.
 
@@ -19,6 +22,9 @@ Sesión 9: Bucle y acumulador (for, while, do while)
 Sesión 10: Funciones
 
 Sesión 11: Vectores
+
+### Semestre 2
+Se realizó un repaso para para el tema de dasarrollo de aplicaciones moviles
 
 ## Referencias (Enlaces y docs):
 
@@ -45,3 +51,7 @@ Diferencia. entre print() y println()
 Secuencia escape
 
 - https://respuestasrapidas.com.mx/como-usar-secuencias-de-escape-en-java/
+
+## IDE o editor de código utilizado
+
+- Apache NetBeans
