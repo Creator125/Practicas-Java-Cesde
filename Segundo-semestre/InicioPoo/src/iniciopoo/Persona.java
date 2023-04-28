@@ -63,7 +63,6 @@ public class Persona {
     }
     
     public double pagar(String ident, String fechaPago, int salario){
-        int mrentecion = salario + 100000;
-        return mrentecion;
+        return salario + 100000;
     }
 }
