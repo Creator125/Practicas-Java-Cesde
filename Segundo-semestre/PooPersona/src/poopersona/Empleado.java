@@ -25,7 +25,11 @@ public class Empleado extends Persona{
     
     
     @Override
-    public void mostrar();
+    public void mostrar(){
+        
+    };
     
-    public void calculaSalarioNeto();
+    public void calculaSalarioNeto(){
+        
+    };
 }

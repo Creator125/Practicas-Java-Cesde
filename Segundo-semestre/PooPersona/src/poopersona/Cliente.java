@@ -35,5 +35,7 @@ public class Cliente extends Persona{
     }
     
     @Override
-    public void mostrar();
+    public void mostrar(){
+        
+    };
 }
